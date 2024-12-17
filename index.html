@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./index.js"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" | class="logo">Sourodip 
+            <span>Nath</span>
+        </a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#projects" class="active">Projects</a>
+            <a href="#about">About Me</a>
+            <a href="#contact">Contact</a>
+        </nav>    
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hello, It's <span> Me Sourodip</span></h1>
+            <h3>I am  a <span>fresher Web Developer</span></h3>
+            <p>I am Sourodip Nath.I am working as a fresher web developer at Klizos Technologies Pvt Ltd where I am learning Laravel and Vue js</p>
+            <div class="social-icon">
+                <a href="https://github.com/Sourodip542">
+                    <i class="bx  bxl-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sourodip-nath-081742254/">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+            </div>
+            <div class="btn-group">
+                <!-- <a href="#" class="btn">Home</a> -->
+                <a href="#contact" class="btn">Contact</a>
+                <a href="#projects" class="btn">Projects</a>
+            </div>
+            
+        </div>
+
+        <div class="home-img">
+            <img src="image.jpg" alt="">
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="image.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h2>About <span>Me</span></h2>
+            <p>I am Sourodip Nath.I am working as a fresher web developer at Klizos Technologies Pvt Ltd where I am learning Laravel and Vue js</p>
+            <!-- <a href="#" class="btn">Read More</a> -->
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h2 class="heading">Projects</h2>
+            <div class="projects-container">
+
+                <div class="project-box">
+                    <div class="project-info">
+                        <i class='bx bxl-vuejs'></i>
+                        <h4>Vue Js Jobs Portal</h4>
+                        <p>Vue Js Job portal using VueJs and json server</p>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <div class="project-info">
+                        <i class='bx bx-code'></i>
+                        <h4>Laravel Crud With Employee Details</h4>
+                        <p>Crud Operation on Employee Details using Laravel and VueJs</p>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <div class="project-info">
+                        <i class='bx bx-code'></i>
+                        <h4>User Portfolio</h4>
+                        <p>User Portfolio using HTML,CSS,JAVA SCRIPT</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <style>
+      
+.form-messages {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.form-messages.success {
+    color: green;
+}
+
+.form-messages.error {
+    color: red;
+}
+
+
+.input-box.error input,
+.input-box.error textarea {
+    border-color: red;
+}
+
+.input-box.success input,
+.input-box.success textarea {
+    border-color: green;
+}
+
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+    </style>
+   <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+    <form id="form">
+        <div id="form-messages" class="form-messages"></div> 
+        <div class="input-group">
+            <div class="input-box">
+                <input type="text" id="name" placeholder="Full Name">
+                <!-- <span class="error"></span> -->
+            </div>
+            <div class="input-box">
+                <input type="text" id="email" placeholder="Email id">
+                <!-- <span class="error"></span> -->
+            </div>
+            <div class="input-box">
+                <input type="number" id="number" placeholder="Mobile Number">
+                <!-- <span class="error"></span> -->
+            </div>
+            <div class="input-box">
+                <input type="text" id="subject" placeholder="Subject">
+                <!-- <span class="error"></span> -->
+            </div>
+        </div>
+        <div class="input-group-2">
+            <textarea id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <!-- <span class="error"></span> -->
+        </div>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+</section>
+
+    <footer class="footer">
+        <div class="social-icon">
+            <a href="https://github.com/Sourodip542">
+                <i class="bx bxl-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sourodip-nath-081742254/">
+                <i class="bx bxl-linkedin"></i>
+            </a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#about">About Me</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>   
+        </ul>
+        <p class="copyright">Copyright | 2024 by Sourodip Nath | All Rights Reserved. |Klizos Technologies Pvt Ltd.</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
